@@ -4,6 +4,11 @@ install:
 		
 format:
 	black *.py
+
+
+install-azure:
+	pip install --upgrade pip &&\
+		pip install -r requirements-azure.txt
 	
 lint:
 	pylint --disable=R,C hello.py
